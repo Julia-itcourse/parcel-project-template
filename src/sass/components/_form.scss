@@ -1,0 +1,143 @@
+.form-link {
+  color: $accent-color;
+  text-decoration: underline;
+}
+
+textarea {
+  resize: none;
+}
+.lable {
+  display: block;
+}
+.input-field {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%;
+  padding: 12px 42px;
+  color: $title-text-color;
+
+  &--no-icon {
+    padding: 12px;
+    color: $title-text-color;
+  }
+}
+.close-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid $close-button-border;
+  background-color: $primary-background-color;
+
+  &:hover .form-close-icon {
+    fill: $accent-color;
+  }
+}
+.form-close-icon {
+  width: 11px;
+  height: 11px;
+  fill: $title-text-color;
+}
+
+#name-form-icon {
+  width: 12px;
+  height: 12px;
+}
+#tel-form-icon {
+  width: 13px;
+  height: 13px;
+}
+#mail-form-icon {
+  width: 15px;
+  height: 12px;
+}
+
+.label {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.input-text {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+  transition: $primary-transition;
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
+}
+
+.label:focus-within .form-icon,
+.input-field:not(:placeholder-shown) + .form-icon {
+  fill: $accent-color;
+}
+.input-field:focus {
+  outline: 1px solid $accent-color;
+  border-radius: 4px;
+}
+.input-field:focus + .input-text,
+.input-field:not(:placeholder-shown) + .input-text {
+  font-size: 12px;
+  color: $accent-color;
+  top: 0;
+
+  transform: translate(-28px, calc(-100% - 4px));
+}
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+
+  &-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 15px;
+    background-image: url(../images/checkbox-icon-empty.svg);
+    margin-right: 10px;
+  }
+  &:checked + .checkbox-icon {
+    width: 16px;
+    height: 15px;
+    border-color: $accent-color;
+    background-color: $accent-color;
+    background-image: url(../images/full-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+    border-radius: 2px;
+  }
+}
+
+.form {
+  text-align: center;
+}
+
+.form-field {
+  margin-bottom: 28px;
+}
+
+.form-button {
+  width: 200px;
+  &:hover {
+    background-color: $form-button-hover;
+    color: $primary-background-color;
+  }
+}
+
+.conditions {
+  display: block;
+}

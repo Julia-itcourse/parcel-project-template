@@ -1,0 +1,82 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="close-button" data-modal-close>
+      <svg class="form-close-icon" id="close-icon">
+        <use xlink:href="./images/sprite.svg#close-icon"></use>
+      </svg>
+    </button>
+    <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+    <form id="form" action="#" class="form">
+      <div class="form-field">
+        <label class="label">
+          <input
+            class="input-field"
+            type="text"
+            name="name"
+            id="name"
+            placeholder=" "
+          />
+          <span class="input-text">Имя</span>
+          <svg class="form-icon" id="name-form-icon">
+            <use xlink:href="./images/sprite.svg#name-form-icon"></use>
+          </svg>
+        </label>
+      </div>
+
+      <div class="form-field">
+        <label class="label">
+          <input
+            class="input-field"
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder=" "
+          />
+          <span class="input-text">Телефон</span>
+          <svg class="form-icon" id="tel-form-icon">
+            <use xlink:href="./images/sprite.svg#tel-form-icon"></use>
+          </svg>
+        </label>
+      </div>
+      <div class="form-field">
+        <label class="label">
+          <input
+            class="input-field"
+            type="email"
+            name="e-mail"
+            id="e-mail"
+            placeholder=" "
+          />
+          <span class="input-text">Почта</span>
+          <svg class="form-icon" id="mail-form-icon">
+            <use xlink:href="./images/sprite.svg#mail-form-icon"></use>
+          </svg>
+        </label>
+      </div>
+      <div class="form-field">
+        <label class="label">
+          <textarea
+            class="input-field input-field--no-icon"
+            name="comment"
+            id="comment"
+            rows="6"
+            placeholder="Комментарий"
+          ></textarea>
+        </label>
+      </div>
+      <div class="form-field">
+        <label class="conditions">
+          <input class="checkbox" type="checkbox" name="policy" id="policy" />
+          <span class="checkbox-icon"></span>
+          <span
+            >Соглашаюсь с рассылкой и принимаю
+            <a href="" class="form-link link">Условия договора</a></span
+          >
+        </label>
+      </div>
+      <button type="submit" class="primary-button form-button">
+        Отправить
+      </button>
+    </form>
+  </div>
+</div>

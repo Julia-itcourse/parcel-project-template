@@ -1,0 +1,46 @@
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+
+  transition: $primary-transition;
+}
+
+.social-list {
+  display: flex;
+  width: 206px;
+
+  justify-content: space-between;
+  margin-bottom: 24px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+.social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  color: $icon-color;
+
+  background-color: $primary-background-color;
+
+  transition: $primary-transition;
+
+  &:hover {
+    color: $secondary-text-color;
+    background-color: $accent-color;
+  }
+
+  &:hover .social-icon {
+    fill: $primary-background-color;
+    transition: $primary-transition;
+  }
+}
+.link-icon {
+  width: 44px;
+  height: 44px;
+}

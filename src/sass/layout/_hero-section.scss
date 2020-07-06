@@ -1,0 +1,38 @@
+.hero {
+  text-align: center;
+
+  display: flex;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/overlay-opt.jpg);
+  height: 600px;
+  max-width: 1600px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &-text {
+    width: 696px;
+    margin: auto;
+  }
+  .hero-title {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: $secondary-text-color;
+  }
+}

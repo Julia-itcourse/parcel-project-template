@@ -1,0 +1,30 @@
+.primary-button {
+  min-width: 200px;
+  border: 1px solid $accent-color;
+  border-radius: 4px;
+
+  padding: 10px 32px;
+
+  background-color: $accent-color;
+  color: $primary-background-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+
+  box-shadow: $primary-button-shadow;
+  border-radius: 4px;
+
+  transition: $primary-transition;
+
+  text-align: center;
+
+  &:hover {
+    color: $accent-color;
+    background-color: $secondary-text-color;
+    border: 1px solid $secondary-text-color;
+  }
+}
+button:active,
+button:focus {
+  outline: none;
+}

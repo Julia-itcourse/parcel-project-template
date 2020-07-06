@@ -1,0 +1,23 @@
+.logo {
+  color: $title-text-color;
+  text-decoration: none;
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  transition: $primary-transition;
+
+  &:hover {
+    color: $accent-color;
+  }
+}
+.footer .logo {
+  color: $secondary-text-color;
+  transition: $primary-transition;
+}
+.logo > span {
+  color: $accent-color;
+}
